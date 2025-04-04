@@ -62,8 +62,52 @@ console.log(fullname("Yetunde", "Dorcas Awolade"));
 const filtereCountries = countries.filter (country => country.length >= 6);
 console.log(filtereCountries);
 
-     // //
+     //Names in an Array //
      const names = ['Tamara', 'Mathias', 'Elias','Brook'];
      names.forEach(name =>{
         console.log(name)
      });
+     const upperCasenames = names.map(names => names.toUpperCase());
+     console.log(upperCasenames)
+
+
+
+
+     // numbers //
+     const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+     numbers.map(number => console.log(number));
+     
+     // square number //
+     const squareNumbers = numbers.map(number => number **2);
+     console.log(squareNumbers)
+
+
+     // Product Pricing, using map to map //
+     const products = [
+        {product: 'banana', price: 3},
+        {product: 'mango', price: 6},
+        {product: 'potatoes', price: ''},
+        {product: 'avocado', price: 8},
+        {product: 'coffe', price: 10},
+        {product: 'tea', price: 10},
+     ]
+     const prices = products.map(product => product.price);
+     console.log(prices)
+    
+     // filtering out //
+     const price = products.map(product => product.price);
+     const currentprice = price.filter(price => price !== '' && price !== '');
+     console.log(currentprice);
+
+
+
+
+     //OBJECTIVE ASSIGNMENT//
+    const dog = {
+    name:'Smart', 
+    legs:4, 
+    color:'black and brown', 
+    age:5,
+     bark:"woof! woof!"
+    };
+     console.log(dog);
